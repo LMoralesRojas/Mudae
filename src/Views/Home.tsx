@@ -4,18 +4,45 @@ import Cartas from "../Components/Cartas";
 import { Button } from "antd";
 
 export default function Home({ pjs }: { pjs: pj[] }) {
-  const [showAllCards, setShowAllCards] = useState(false);
+  const [showRandomCard, setShowRandomCard] = useState<null | pj>(null);
 
-  return showAllCards ? (
+  const randomMain = () => {
+    const randomIndex = Math.floor(Math.random() * pjs.length);
+    setShowRandomCard(pjs[randomIndex]);
+  };
+
+  return showRandomCard ? (
+    //aca esta el bg de todo el espacio cartas mas botones
     <div className="w-full h-full flex flex-wrap items-center justify-center">
-      {pjs.map((pj) => (
-        <Cartas pj={pj} />
-      ))}
-    </div>
+      <Cartas pj={showRandomCard} />
+
+      <div className="flex flex-col items-center mt-4  ">
+        <Button className="w-32 mb-2 " type="primary" onClick={randomMain}>
+          Otra carta
+        </Button>
+        <Button
+          className="w-32 !bg-red-500 !text-black"
+          onClick={() => setShowRandomCard(null)}
+        >
+          <h3>
+            <strong>Volver</strong>
+          </h3>
+        </Button>
+      </div>
+    </div> //espacio de los botones el del bg
   ) : (
-    <div className=" w-32 flex items-center justify-center h-full">
-      <Button className="w-32" onClick={() => setShowAllCards(true)} block>
-        Invocar
+    //el bg del boton
+    <div className=" w-30 flex items-center justify-center h-full">
+      <Button
+        className={`!bg-black !text-white hover:!bg-red-700 w-32 mt-4 transition-all${
+          showRandomCard ? "z-20 absolute bottom-8 " : ""
+        }`}
+        onClick={randomMain}
+        block
+      >
+        <h5>
+          <strong>Invocar</strong>
+        </h5>
       </Button>
     </div>
   );
