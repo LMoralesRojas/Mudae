@@ -87,13 +87,20 @@ function App() {
       valor: 900,
       descripcion:
         "Emperador Mago, maestro de la magia del tiempo y protector del reino del Trébol.",
-      img: "https://i.pinimg.com/736x/24/c3/f7/24c3f7f6b1c40ed8e4b1aebc82b26d95.jpg",
+      img: "https://i.pinimg.com/736x/b3/5d/9b/b35d9b3d2a5ce26da72581b6e1998db3.jpg",
     },
   ];
 
   return (
-    <div className="w-full h-full min-h-screen flex items-center justify-center bg-indigo-950">
-      <Home pjs={pjs} />{" "}
+    <div className="relative w-full h-full min-h-screen flex items-center justify-center bg-indigo-950 overflow-hidden">
+      <img
+        className="w-full h-full min-h-screen object-cover opacity-16 absolute inset-0"
+        src="https://i.pinimg.com/736x/32/6a/ec/326aec7f325df4d3edeede1f7a905b19.jpg"
+        alt="background"
+      />
+      <div className="relative z-10 flex items-center justify-center w-full h-full">
+        <Home pjs={pjs} />{" "}
+      </div>
     </div>
   );
 }
