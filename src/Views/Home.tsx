@@ -17,11 +17,11 @@ export default function Home({ pjs }: { pjs: pj[] }) {
       <Cartas pj={showRandomCard} />
 
       <div className="flex flex-col items-center mt-4  ">
-        <Button className="w-32 mb-2 " type="primary" onClick={randomMain}>
+        <Button className="w-32 mb-2 hover:!bg-yellow-600 !border-black !border-3" type="primary" onClick={randomMain}>
           Otra carta
         </Button>
         <Button
-          className="w-32 !bg-red-500 !text-black"
+          className="w-32 !bg-red-400 !text-black hover:!bg-purple-400 !border-black !border-3"
           onClick={() => setShowRandomCard(null)}
         >
           <h3>
