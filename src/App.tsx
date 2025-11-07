@@ -55,7 +55,7 @@ function App() {
       name: "Luck Voltia",
       valor: 680,
       descripcion: "Mago eléctrico del Toro Negro, obsesionado con las peleas.",
-      img: "https://i.pinimg.com/736x/5b/9d/7d/5b9d7d3216a343e143c45f15dbecc1a5.jpg",
+      img: "https://i.pinimg.com/1200x/d3/37/8e/d3378e17f87a8c918a442e0db01b62b4.jpg",
     },
     {
       id: 7,
@@ -63,7 +63,7 @@ function App() {
       valor: 640,
       descripcion:
         "Usuario de magia de fuego, leal al Toro Negro y con actitud rebelde.",
-      img: "https://i.pinimg.com/736x/fc/63/ea/fc63eabf916b91c6d5a9f7b0fbd1ac1b.jpg",
+      img: "https://i.pinimg.com/1200x/0f/17/fc/0f17fc431932a5f44a587f8e6a9ed7ee.jpg",
     },
     {
       id: 8,
@@ -71,7 +71,7 @@ function App() {
       valor: 710,
       descripcion:
         "Maga del Toro Negro que maneja hilos mágicos, famosa por su destino de bruja.",
-      img: "https://i.pinimg.com/736x/48/94/0c/48940c4167a9f57ecaecc7f4d7b18bb4.jpg",
+      img: "https://i.pinimg.com/736x/b4/f2/53/b4f253092722e970471234bd46dafff5.jpg",
     },
     {
       id: 9,
@@ -79,7 +79,7 @@ function App() {
       valor: 670,
       descripcion:
         "Mago del Toro Negro que usa espejos, muy protector con su hermana Marie.",
-      img: "https://i.pinimg.com/736x/63/03/53/63035360ad052c9a91e54f6e8f8c8df6.jpg",
+      img: "https://i.pinimg.com/1200x/ef/be/00/efbe004e7b66081b7404aa35a840db41.jpg",
     },
     {
       id: 10,
