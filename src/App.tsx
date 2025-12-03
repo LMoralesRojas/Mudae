@@ -1,20 +1,21 @@
 import "./App.css";
 import Home from "./Views/Home";
-export type pj = {
+
+//adaptado para que sea lo mas parecido a lo que se encuntra en las Apis
+
+export type MudaeCharacter = {
   id: number;
   name: string;
+  serie: string;
+  rango: "Waifu" | "Husbando"; //para ser usado dentro del filtro posteriormente 
   valorKakera: number;
-  serie:string;
-  rango:string;
-  descripcion:string;
-  //estatus:string;
-  //etiquetas:string;
+  descripcion: string;
   img?: string;
 };
 
 function App() {
-  const pjs: pj[] = [
-  {
+  const pjs: MudaeCharacter[] = [
+    {
       id: 1,
       name: "Asta",
       serie: "Black Clover",
@@ -91,7 +92,7 @@ function App() {
       valorKakera: 710,
       descripcion:
         "Maga del Toro Negro que maneja hilos mágicos, famosa por su destino de bruja.",
-      img: "https://i.pinimg.com/736x/b4/f2/53/b4f253092722e970471234bd46dafff5.jpg",
+      img: "https://i.pinimg.com/736x/bcd 4/f2/53/b4f253092722e970471234bd46dafff5.jpg",
     },
     {
       id: 9,
