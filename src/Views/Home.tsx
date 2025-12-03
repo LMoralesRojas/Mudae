@@ -1,10 +1,10 @@
 import { useState } from "react";
-import type { pj } from "../App";
+import type { MudaeCharacter } from "../App";
 import Cartas from "../Components/Cartas";
 import { Button } from "antd";
 
-export default function Home({ pjs }: { pjs: pj[] }) {
-  const [showRandomCard, setShowRandomCard] = useState<null | pj>(null);
+export default function Home({ pjs }: { pjs: MudaeCharacter[] }) {
+  const [showRandomCard, setShowRandomCard] = useState<null | MudaeCharacter>(null);
 
   const randomMain = () => {
     const randomIndex = Math.floor(Math.random() * pjs.length);
